@@ -27,3 +27,13 @@ a:link, a:visited, a:hover {
 	color: #EACDC2;
 }
 
+.landinggroup {
+	height:100vh;
+}
+
+div img {
+	height:auto ;
+	width:50%
+}
+
+
