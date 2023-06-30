@@ -16,42 +16,45 @@
 </head>
 <body>
 
-<header>
-	<nav class="navbar navbar-expand-sm sticky-top">
-	    <div class="container-fluid">
-	      <a class="navbar-brand" href="#">Wyman.</a>
-	      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
-	        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="navbar-toggler-icon"></span>
-	      </button>
-	      <div class="collapse navbar-collapse" id="navbarNav">
-	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item">
-	            <a class="nav-link" href="#landing">Home</a>
-	          </li>
-	          <li class="nav-item">
-	            <a class="nav-link" href="#">Projects</a>
-	          </li>
-	          <li class="nav-item">
-	            <a class="nav-link" href="#">Tools</a>
-	          </li>
-	          <li class="nav-item">
-	            <a class="nav-link" href="#">Contact</a>
-	          </li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
+<header id="navbar">
+  <nav class="navbar navbar-expand-sm fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#navbar">
+          <img class="img-fluid wlogo" src="./images/wlogo.png" alt="Wyman Logo">
+          <span class="brandname">Wyman.<span>
+        </a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#landing">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tools">Tools</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 </header>
 
 <main id="landing">
 <div class="container-fluid d-flex justify-content-center align-items-center landinggroup">
   <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-around">
-      <img class="img-fluid" src="./images/facebook.png">
+      <img class="img-fluid rounded-circle profilepic" src="./images/profilepic.jpg">
     </div>
-    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column justify-content-center">
-      <h1 class="text-center mt-3">Wyman Magpantay</h1>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column justify-content-center pr-5">
+      <h1 class="text-center mt-3">Hey, I'm <span class="profilename">Wyman!</span></h1>
       <h3 class="text-center mt-2">Full Stack Web Developer in the Making</h3>
       <p class="text-center mt-3">Hello there! I'm Wyman, an aspiring full stack developer with a passion for creating innovative and user-friendly web applications. Although I may not have prior professional experience in the field, I bring a strong enthusiasm for learning and a determination to excel in the world of web development.</p>
       <p class="text-center m-3"> I am committed to honing my skills, expanding my knowledge, and creating impactful applications that make a difference in people's lives. I am excited about the opportunities that lie ahead and look forward to the challenges and rewards of this incredible journey.</p>
@@ -60,10 +63,193 @@
 </div>
 </main>
 
-<div>
-	
-</div>
+<section id="projects">
+	<div class="container-fluid text-center pt-3">
+		<h1 class="text-center mt-5 projectheading">Projects</h1>
+			<div class="row projectimages">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-5 mb-3">
+                    <img class="img-fluidmb-2" src="./images/project1.png">
+                    <h5 class="pt-3">Responsive Website</h5>
+                    <p>Creating websites with responsive elements on all screen sizes. Like the puppy in the picture.</p>
+                </div>           
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-5 mb-3">
+                    <img class="img-fluid mb-2" src="./images/project4.png">
+                    <h5 class="pt-3">Website Replication</h5>
+                    <p>Recreating websites shown from scratch. All links are responsive and clickable.
+                    </p>
+                </div>           
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-5 mb-3">
+                    <img class="img-fluid mb-2" src="./images/project3.png">
+                    <h5 class="pt-3">Element Positioning</h5>
+                    <p>Positioning Elements using different methods like flexbox and grid controls.
+                    </p>
+                </div>        
+            </div>
+</section>
 
+<section id="tools">
+  <div class="d-flex flex-column container-fluid">
+    <h1 class="text-center mt-5">Tools Used</h1>
+    <h2 class="text-center mt-5 mb-3">Front End</h2>
+    <div id="html" class="row justify-content-center align-items-center">
+      <div class="col-6 col-md-3 col-lg-3 col-xl-3">
+        <div class="image-container text-center">
+          <img src="./images/html5.png" class="img-fluid" />
+          <div class="image-title d-block d-md-none">HTML5</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-3 col-xl-3">
+        <div class="image-container text-center">
+          <img src="./images/css.png" class="img-fluid" />
+          <div class="image-title d-block d-md-none">CSS</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-3 col-xl-3">
+        <div class="image-container text-center">
+          <img src="./images/java.png" class="img-fluid" />
+          <div class="image-title d-block d-md-none">Java</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-3 col-xl-3">
+        <div class="image-container text-center">
+          <img src="./images/bootstrap.png" class="img-fluid" />
+          <div class="image-title d-block d-md-none">Bootstrap</div>
+        </div>
+      </div>
+    </div>
+  <h2 class="text-center mt-5 mb-3">MERN</h2>
+    <div id="html" class="row justify-content-center align-items-center">
+      <div class="col-6 col-md-3 col-lg-3 col-xl-3">
+        <div class="image-container text-center">
+          <img src="./images/mongodb.png" class="img-fluid" />
+          <div class="image-title d-block d-md-none">MongoDB</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-3 col-xl-3">
+        <div class="image-container text-center">
+          <img src="./images/express.png" class="img-fluid" />
+          <div class="image-title d-block d-md-none">Express</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-3 col-xl-3">
+        <div class="image-container text-center">
+          <img src="./images/react.png" class="img-fluid" />
+          <div class="image-title d-block d-md-none">React</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-3 col-xl-3">
+        <div class="image-container text-center">
+          <img src="./images/node.png" class="img-fluid" />
+          <div class="image-title d-block d-md-none">Node</div>
+        </div>
+      </div>
+    </div>
+  <h2 class="text-center mt-5 mb-3">Other Tools</h2>
+    <div id="html" class="row justify-content-center align-items-center mb-5">
+      <div class="col-6 col-md-3 col-lg-3 col-xl-3">
+        <div class="image-container text-center">
+          <img src="./images/git.png" class="img-fluid" />
+          <div class="image-title d-block d-md-none">Git</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-3 col-xl-3">
+        <div class="image-container text-center">
+          <img src="./images/postman.png" class="img-fluid" />
+          <div class="image-title d-block d-md-none">Postman</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-3 col-xl-3">
+        <div class="image-container text-center">
+          <img src="./images/gitlab.png" class="img-fluid" />
+          <div class="image-title d-block d-md-none">Gitlab</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-3 col-xl-3">
+        <div class="image-container text-center">
+          <img src="./images/sublime.png" class="img-fluid" />
+          <div class="image-title d-block d-md-none">Sublime</div>
+        </div>
+      </div>
+   </div>
+</div>
+</section>
+
+<section id="contact">
+  <h1 class="text-center mt-5">Reach Me Through these Platforms</h1>
+    <div id="html" class="row justify-content-center align-items-center mt-5">
+      <div class="col-6 col-md-3 col-lg-3 col-xl-3">
+        <div class="image-container text-center">
+          <a href="https://www.facebook.com/WYGV8713/" target="_blank"><img src="./images/fblogo.png" class="img-fluid"/></a>
+          <div class="image-title d-block d-md-none">Facebook</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-3 col-xl-3">
+        <div class="image-container text-center">
+          <a href="#formlink"><img src="./images/google.png" class="img-fluid"/></a>
+          <div class="image-title d-block d-md-none">Email</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-3 col-xl-3">
+        <div class="image-container text-center">
+          <a href="https://www.linkedin.com/" target="_blank"><img src="./images/linkedin.png" class="img-fluid"/></a>
+          <div class="image-title d-block d-md-none">LinkedIn</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-3 col-xl-3">
+        <div class="image-container text-center">
+          <a href="https://gitlab.com/wymagpantay" target="_blank"><img src="./images/gitlab.png" class="img-fluid"/></a>
+          <div class="image-title d-block d-md-none">Gitlab</div>
+        </div>
+      </div>
+   </div>
+  <div class="container-fluid mt-5 mb-5">
+  <div class="row justify-content-between">
+    <div class="google-map col-lg-6 col-md-6 col-12 px-3 py-5">
+      <h3 class="text-center mb-3">My Location</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1149.3127175718307!2d120.97221896231314!3d14.32236331176211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1688114809569!5m2!1sen!2sph" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="col-lg-6 col-md-6 col-12 px-3 py-5">
+      <div id="formlink" class="contactmeform">
+        <form>
+          <h3 class="text-center mb-3">Reach out to Me</h3>
+          <div class="form-group">
+            <label for="name"></label>
+            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label for="email"></label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="message"></label>
+            <textarea class="form-control" id="message" rows="3" placeholder="What's on your Mind?" required></textarea>
+          </div>
+          <div class="text-center">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<footer>
+  <div id="footer" class="fixed-bottom text-center text-light mt-5 p-1">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-4 col-sm-4 p-1">
+          Wyman Magpantay
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 footerdate p-1">
+          I
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 footerdate p-1">
+          All Rights Reserved 2023
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
