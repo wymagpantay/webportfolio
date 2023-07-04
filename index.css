@@ -5,6 +5,10 @@
 	font-family: 'Poppins', sans-serif;
 }
 
+body {
+overflow-x: hidden;
+}
+
 nav, #footer {
 	background-color: #2554a0;
 	color: white;
